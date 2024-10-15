@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Introduction Page</title>
+    <title>Arduino Nano Wokwi Project</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,30 +14,71 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
-        .intro-container {
-            text-align: center;
+        .project-container {
             background-color: #fff;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
         }
         h1 {
-            font-size: 2.5rem;
             color: #333;
         }
         p {
-            font-size: 1.2rem;
-            color: #666;
+            color: #555;
+            font-size: 1rem;
+        }
+        .code-block {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        .wokwi-link {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .wokwi-link:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="intro-container">
-        <h1>nama akuh kalap</h1>
-        <p>EZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ</p>
+    <div class="project-container">
+        <h1>Arduino Nano Wokwi Project</h1>
+        <p>This project simulates an Arduino Nano using Wokwi. You can run the simulation directly in your browser via Wokwi.</p>
+        
+        <h2>Code Example:</h2>
+        <div class="code-block">
+            <code>
+// Sample Arduino code for Wokwi
+void setup() {
+    pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(LED_BUILTIN, HIGH);  // Turn the LED on
+    delay(1000);                      // Wait for a second
+    digitalWrite(LED_BUILTIN, LOW);   // Turn the LED off
+    delay(1000);                      // Wait for a second
+}
+            </code>
+        </div>
+
+        <a class="wokwi-link" href="https://wokwi.com/projects/PROJECT_ID" target="_blank">
+            Run Simulation on Wokwi
+        </a>
     </div>
 </body>
 </html>
-
