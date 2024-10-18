@@ -3,68 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Project LampuJalanOtomatis Wokwi</title>
+    <title>Project Showcase</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
         }
-        .project-container {
-            background-color: #fff;
+        .project {
+            width: 300px;
+            border: 1px solid #ccc;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
         }
-        h1 {
-            color: #333;
+        .project:hover {
+            transform: scale(1.05);
         }
-        p {
-            color: #555;
-            font-size: 1rem;
+        .project img {
+            max-width: 100%;
+            height: auto;
         }
-        .code-block {
-            background-color: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
-            font-family: "Courier New", Courier, monospace;
-            white-space: pre-wrap;
-            overflow-x: auto;
-            margin: 10px 0;
-        }
-        .wokwi-link {
-            display: inline-block;
-            margin-top: 20px;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
+        .project a {
             text-decoration: none;
-            border-radius: 5px;
-        }
-        .wokwi-link:hover {
-            background-color: #45a049;
+            color: #007BFF;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <div class="project-container">
-        <h1>Project LampuJalanOtomatis Wokwi</h1>
-        <p>Proyek ini mensimulasikan Arduino menggunakan Wokwi. Anda dapat menjalankan simulasi langsung di peramban Anda melalui Wokwi.</p>
-        
-            </code>
-        </div>
-    
-        <a class="wokwi-link" href="https://wokwi.com/projects/410686995565794305" target="_blank">
-            Run Simulation on Wokwi
-        </a>
+
+    <div class="project">
+        <img src="project-image.jpg" alt="Project Image">
+        <h2>Project Title</h2>
+        <p>This is a brief description of the project. Click the link below to learn more.</p>
+        <a href="https://example.com" target="_blank">Go to Project Website</a>
     </div>
+
 </body>
 </html>
